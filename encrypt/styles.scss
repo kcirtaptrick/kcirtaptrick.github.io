@@ -13,11 +13,10 @@ body {
   }
 }
 textarea {
-  transition: flex 0.3s;
   flex: 1;
 
   &:focus {
-    flex: 2;
+    flex: 1.5;
   }
 }
 header {
@@ -34,6 +33,7 @@ button {
   box-shadow: 0 0 10px 0 #ddd;
   border: 0;
 
+  transition: flex 0.3s, background-color 0.3s, box-shadow 0.3s;
   border-radius: 3px;
   padding: 10px;
   outline: none;
@@ -43,18 +43,18 @@ button {
   input {
     flex: 1;
   }
-}
-button {
-  margin-left: 10px;
-  padding: 10px 30px;
+  button {
+    margin-left: 10px;
+    padding: 10px 30px;
 
-  color: white;
-  font-weight: bolder;
-  cursor: pointer;
-}
-button:first-of-type {
-  background-color: #88f;
-}
-button:last-of-type {
-  background-color: #f88;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    &.encrypt {
+      background-color: #88f;
+    }
+    &.decrypt {
+      background-color: #f88;
+    }
+  }
 }
