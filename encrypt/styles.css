@@ -1,5 +1,18 @@
+html {
+  height: 100%;
+}
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+textarea {
+  transition: flex 0.3s;
+  flex: 1;
+}
+textarea:focus {
+  flex: 2;
 }
 header {
   text-align: center;
@@ -12,7 +25,7 @@ header {
 textarea,
 input,
 button {
-  box-shadow: 0 0 5px 0 grey;
+  box-shadow: 0 0 5px 0 #ddd;
   border: 0;
   font-size: 1.5vh;
   border-radius: 3px;
@@ -23,13 +36,13 @@ textarea {
   width: calc(98vw - 20px);
   height: calc(39vh - 20px);
   margin: 2.3vh 1vw 2vh 1vw;
-  box-shadow: 0 0 5px 0 grey;
+  box-shadow: 0 0 5px 0 #ddd;
 }
 textarea:focus,
 input:focus,
 button:focus {
   border: 0;
-  box-shadow: 0 0 10px 0 grey;
+  box-shadow: 0 0 10px 0 #ddd;
   outline: none;
 }
 input {
