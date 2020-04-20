@@ -7,7 +7,10 @@ body {
   flex-direction: column;
   height: 100%;
   box-sizing: border-box;
-  padding-top: 20px;
+  padding: 5px 10px 0;
+  > * {
+    margin: 5px 0;
+  }
 }
 textarea {
   transition: flex 0.3s;
@@ -30,35 +33,24 @@ input,
 button {
   box-shadow: 0 0 10px 0 #ddd;
   border: 0;
-  font-size: 1.5vh;
+
   border-radius: 3px;
-  transition-duration: 0.3s;
   padding: 10px;
-}
-textarea {
-  width: calc(98vw - 20px);
-  height: calc(39vh - 20px);
-  margin: 2.3vh 1vw 2vh 1vw;
-  box-shadow: 0 0 5px 0 #ddd;
-}
-textarea:focus,
-input:focus,
-button:focus {
-  border: 0;
-  box-shadow: 0 0 10px 0 #ddd;
   outline: none;
 }
-input {
-  height: calc(4vh - 20px);
-  margin: 0 0.5vw 0 1vw;
-  width: calc(77vw - 41px);
+.actions {
+  display: flex;
+  input {
+    flex: 1;
+  }
 }
 button {
-  height: 4vh;
-  margin: 0 0.5vw 0 0;
-  width: 10vw;
+  margin-left: 10px;
+  padding: 10px 30px;
+
   color: white;
   font-weight: bolder;
+  cursor: pointer;
 }
 button:first-of-type {
   background-color: #88f;
