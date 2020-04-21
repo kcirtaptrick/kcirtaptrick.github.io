@@ -25,6 +25,7 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  resize: none;
 }
 
 header {
@@ -43,10 +44,11 @@ button {
   transition: background-color 0.3s, -webkit-box-shadow 0.3s;
   transition: background-color 0.3s, box-shadow 0.3s;
   transition: background-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 10px;
   outline: none;
-  background: #ddd;
+  background: #f5f5fa;
+  min-width: 0;
 }
 
 textarea:focus,
@@ -71,7 +73,14 @@ button:focus {
 
 .actions button {
   margin-left: 10px;
-  padding: 10px 30px;
+  padding: 10px 15px;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  max-width: 150px;
   color: white;
   font-weight: bolder;
   cursor: pointer;

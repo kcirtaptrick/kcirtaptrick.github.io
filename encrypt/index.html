@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AES Encryption</title>
+    <title>Encryption</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header>AES Encryption</header>
@@ -14,6 +16,6 @@
       <button onclick="encrypt()" class="encrypt">Encrypt</button>
       <button onclick="decrypt()" class="decrypt">Decrypt</button>
     </div>
-    <textarea placeholder="Result"></textarea>
+    <textarea placeholder="Result" disabled></textarea>
   </body>
 </html>

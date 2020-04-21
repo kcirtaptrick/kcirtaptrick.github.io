@@ -1,7 +1,5 @@
-window.onload = () => {
-  document.querySelector("textarea[placeholder='Message']").value =
-    searchToObject().message || "";
-};
+document.querySelector("textarea[placeholder='Message']").value =
+  searchToObject().message || "";
 var encrypt = () => {
   document.querySelector(
     "textarea[placeholder='Result']"

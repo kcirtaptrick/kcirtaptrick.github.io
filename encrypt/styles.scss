@@ -14,6 +14,7 @@ body {
 }
 textarea {
   flex: 1;
+  resize: none;
 }
 header {
   text-align: center;
@@ -29,10 +30,11 @@ button {
   border: 0;
 
   transition: background-color 0.3s, box-shadow 0.3s;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 10px;
   outline: none;
-  background: #ddd;
+  background: #f5f5fa;
+  min-width: 0;
   &:focus {
     background: white;
     box-shadow: 0 0 10px 0 #ddd;
@@ -45,8 +47,10 @@ button {
   }
   button {
     margin-left: 10px;
-    padding: 10px 30px;
-
+    padding: 10px 15px;
+    flex: 0.2;
+    min-width: fit-content;
+    max-width: 150px;
     color: white;
     font-weight: bolder;
     cursor: pointer;
