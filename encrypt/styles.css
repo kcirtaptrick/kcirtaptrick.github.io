@@ -39,10 +39,10 @@ textarea,
 input,
 button {
   border: 0;
-  -webkit-transition: background-color 0.3s, -webkit-box-flex 0.3s, -webkit-box-shadow 0.3s;
-  transition: background-color 0.3s, -webkit-box-flex 0.3s, -webkit-box-shadow 0.3s;
-  transition: flex 0.3s, background-color 0.3s, box-shadow 0.3s;
-  transition: flex 0.3s, background-color 0.3s, box-shadow 0.3s, -webkit-box-flex 0.3s, -ms-flex 0.3s, -webkit-box-shadow 0.3s;
+  -webkit-transition: background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
   border-radius: 3px;
   padding: 10px;
   outline: none;
