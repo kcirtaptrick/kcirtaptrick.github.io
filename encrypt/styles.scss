@@ -14,10 +14,6 @@ body {
 }
 textarea {
   flex: 1;
-
-  &:focus {
-    flex: 1.5;
-  }
 }
 header {
   text-align: center;
@@ -30,13 +26,17 @@ header {
 textarea,
 input,
 button {
-  box-shadow: 0 0 10px 0 #ddd;
   border: 0;
 
   transition: flex 0.3s, background-color 0.3s, box-shadow 0.3s;
   border-radius: 3px;
   padding: 10px;
   outline: none;
+  background: #ddd;
+  &:focus {
+    background: white;
+    box-shadow: 0 0 10px 0 #ddd;
+  }
 }
 .actions {
   display: flex;

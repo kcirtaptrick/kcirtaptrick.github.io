@@ -27,12 +27,6 @@ textarea {
           flex: 1;
 }
 
-textarea:focus {
-  -webkit-box-flex: 1.5;
-      -ms-flex: 1.5;
-          flex: 1.5;
-}
-
 header {
   text-align: center;
   font-size: 30px;
@@ -44,8 +38,6 @@ header {
 textarea,
 input,
 button {
-  -webkit-box-shadow: 0 0 10px 0 #ddd;
-          box-shadow: 0 0 10px 0 #ddd;
   border: 0;
   -webkit-transition: background-color 0.3s, -webkit-box-flex 0.3s, -webkit-box-shadow 0.3s;
   transition: background-color 0.3s, -webkit-box-flex 0.3s, -webkit-box-shadow 0.3s;
@@ -54,6 +46,15 @@ button {
   border-radius: 3px;
   padding: 10px;
   outline: none;
+  background: #ddd;
+}
+
+textarea:focus,
+input:focus,
+button:focus {
+  background: white;
+  -webkit-box-shadow: 0 0 10px 0 #ddd;
+          box-shadow: 0 0 10px 0 #ddd;
 }
 
 .actions {
